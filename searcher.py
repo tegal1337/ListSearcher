@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #!usr/bin/python
-import os, re, sys, socket, base64, json, urlparse
+import os, re, sys, socket, json
 import requests as req 
 from multiprocessing.dummy import Pool
 from colorama import *
