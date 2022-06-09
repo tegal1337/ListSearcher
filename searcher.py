@@ -153,7 +153,7 @@ def ipranger(ipz):
 def revip(target):
   try:
     p = req.get('https://sonar.omnisint.io/reverse/' + target)
-    if "null" in p.text:
+    if '{"error":"no results found"}' in p.text:
       print("[?] "+cut(target, 18)+" | Failed")
     else:
      q = json.loads(p.text)
